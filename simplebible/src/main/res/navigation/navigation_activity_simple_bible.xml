@@ -8,9 +8,9 @@
 
   <fragment
     android:id="@+id/screenHome"
-    android:name="com.andrewchelladurai.app.simplebible.ui.ScreenHome"
+    android:name="com.andrewchelladurai.app.simplebible.ui.HomeScreen"
     android:label="screen_home"
-    tools:layout="@layout/screen_home">
+    tools:layout="@layout/home_screen">
     <action
       android:id="@+id/screenHome_to_screenChapter"
       app:destination="@id/screenChapter" />
@@ -21,9 +21,9 @@
 
   <fragment
     android:id="@+id/screenBookList"
-    android:name="com.andrewchelladurai.app.simplebible.ui.ScreenBookList"
+    android:name="com.andrewchelladurai.app.simplebible.ui.BookListScreen"
     android:label="screen_book_list"
-    tools:layout="@layout/screen_book_list">
+    tools:layout="@layout/book_list_screen">
     <action
       android:id="@+id/screenBookList_to_screenBookDetails"
       app:destination="@id/screenBookDetails" />
@@ -34,9 +34,9 @@
 
   <fragment
     android:id="@+id/screenSearch"
-    android:name="com.andrewchelladurai.app.simplebible.ui.ScreenSearch"
+    android:name="com.andrewchelladurai.app.simplebible.ui.SearchScreen"
     android:label="screen_search"
-    tools:layout="@layout/screen_search">
+    tools:layout="@layout/search_screen">
     <action
       android:id="@+id/screenSearch_to_screenBookmarkDetails"
       app:destination="@id/screenBookmarkDetails" />
@@ -44,15 +44,15 @@
 
   <fragment
     android:id="@+id/screenSettings"
-    android:name="com.andrewchelladurai.app.simplebible.ui.ScreenSettings"
+    android:name="com.andrewchelladurai.app.simplebible.ui.SettingsScreen"
     android:label="screen_settings"
-    tools:layout="@layout/screen_settings" />
+    tools:layout="@layout/settings_screen" />
 
   <fragment
     android:id="@+id/screenBookmarkList"
-    android:name="com.andrewchelladurai.app.simplebible.ui.ScreenBookmarkList"
+    android:name="com.andrewchelladurai.app.simplebible.ui.BookmarkListScreen"
     android:label="screen_bookmark_list"
-    tools:layout="@layout/screen_bookmark_list">
+    tools:layout="@layout/bookmark_list_screen">
     <action
       android:id="@+id/screenBookmarkList_to_screenBookmarkDetails"
       app:destination="@id/screenBookmarkDetails" />
@@ -60,9 +60,9 @@
 
   <fragment
     android:id="@+id/screenChapter"
-    android:name="com.andrewchelladurai.app.simplebible.ui.ScreenChapter"
+    android:name="com.andrewchelladurai.app.simplebible.ui.ChapterScreen"
     android:label="screen_chapter"
-    tools:layout="@layout/screen_chapter">
+    tools:layout="@layout/chapter_screen">
     <action
       android:id="@+id/screenChapter_to_screenBookmarkDetails"
       app:destination="@id/screenBookmarkDetails" />
@@ -76,9 +76,9 @@
 
   <fragment
     android:id="@+id/screenMessage"
-    android:name="com.andrewchelladurai.app.simplebible.ui.ScreenMessage"
+    android:name="com.andrewchelladurai.app.simplebible.ui.MessageScreen"
     android:label="screen_message"
-    tools:layout="@layout/screen_message">
+    tools:layout="@layout/message_screen">
     <argument
       android:name="MESSAGE"
       app:argType="string"
@@ -99,9 +99,9 @@
 
   <fragment
     android:id="@+id/screenBookDetails"
-    android:name="com.andrewchelladurai.app.simplebible.ui.ScreenBookDetails"
+    android:name="com.andrewchelladurai.app.simplebible.ui.BookDetailsScreen"
     android:label="screen_book_details"
-    tools:layout="@layout/screen_book_details">
+    tools:layout="@layout/book_details_screen">
     <argument
       android:name="BOOK_NUMBER"
       app:argType="integer" />
@@ -109,9 +109,9 @@
 
   <fragment
     android:id="@+id/screenBookmarkDetails"
-    android:name="com.andrewchelladurai.app.simplebible.ui.ScreenBookmarkDetails"
+    android:name="com.andrewchelladurai.app.simplebible.ui.BookmarkDetailsScreen"
     android:label="screen_bookmark_details"
-    tools:layout="@layout/screen_bookmark_details">
+    tools:layout="@layout/bookmark_details_screen">
     <argument
       android:name="REFERENCES"
       app:argType="string" />

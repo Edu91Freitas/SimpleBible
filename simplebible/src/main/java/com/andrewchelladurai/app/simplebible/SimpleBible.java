@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
-import com.andrewchelladurai.app.simplebible.ui.ops.SimpleBibleOps;
+import com.andrewchelladurai.app.simplebible.ops.SimpleBibleOps;
 import com.andrewchelladurai.simplebible.R;
 import com.google.android.material.bottomappbar.BottomAppBar;
 
