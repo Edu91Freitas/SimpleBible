@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:ignore="AlwaysShowAction">
+  <item
+    android:id="@+id/activity_bottom_app_bar_menu_home"
+    android:icon="@drawable/ic_home"
+    android:title="@string/activity_bottom_app_bar_menu_home"
+    app:showAsAction="always" />
+  <item
+    android:id="@+id/activity_bottom_app_bar_menu_book_list"
+    android:icon="@drawable/ic_books_list"
+    android:title="@string/activity_bottom_app_bar_menu_book_list"
+    app:showAsAction="always" />
+  <item
+    android:id="@+id/activity_bottom_app_bar_menu_search"
+    android:icon="@drawable/ic_search"
+    android:title="@string/activity_bottom_app_bar_menu_search"
+    app:showAsAction="always" />
+  <item
+    android:id="@+id/activity_bottom_app_bar_menu_bookmark_list"
+    android:icon="@drawable/ic_bookmark_list"
+    android:title="@string/activity_bottom_app_bar_menu_bookmark_list"
+    app:showAsAction="always" />
+  <item
+    android:id="@+id/activity_bottom_app_bar_menu_settings"
+    android:icon="@drawable/ic_settings"
+    android:title="@string/activity_bottom_app_bar_menu_settings"
+    app:showAsAction="always" />
+</menu>

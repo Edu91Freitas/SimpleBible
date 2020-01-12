@@ -9,12 +9,15 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
+import com.andrewchelladurai.app.simplebible.ui.ops.ScreenBookDetailsOps;
+import com.andrewchelladurai.app.simplebible.ui.ops.SimpleBibleOps;
 import com.andrewchelladurai.simplebible.R;
 
 public class ScreenBookDetails
-    extends Fragment {
+    extends Fragment
+    implements ScreenBookDetailsOps {
 
-  private InteractionListener listener;
+  private SimpleBibleOps activityOps;
 
   public ScreenBookDetails() {
     // Required empty public constructor
@@ -23,10 +26,10 @@ public class ScreenBookDetails
   @Override
   public void onAttach(@NonNull Context context) {
     super.onAttach(context);
-    if (context instanceof InteractionListener) {
-      listener = (InteractionListener) context;
+    if (context instanceof SimpleBibleOps) {
+      activityOps = (SimpleBibleOps) context;
     } else {
-      throw new RuntimeException(context.toString() + " must implement InteractionListener");
+      throw new RuntimeException(context.toString() + " must implement SimpleBibleOps");
     }
   }
 
@@ -39,11 +42,7 @@ public class ScreenBookDetails
   @Override
   public void onDetach() {
     super.onDetach();
-    listener = null;
-  }
-
-  public interface InteractionListener {
-
+    activityOps = null;
   }
 
 }

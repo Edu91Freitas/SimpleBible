@@ -1,14 +1,18 @@
 <resources>
 
+  <!-- Main Activity : Used throughout the application-->
   <string name="app_name">Simple Bible</string>
   <string name="default_verse_reference">43:3:16</string>
+  <string name="activity_bottom_app_bar_menu_home">Home</string>
+  <string name="activity_bottom_app_bar_menu_book_list">Books</string>
+  <string name="activity_bottom_app_bar_menu_search">Search</string>
+  <string name="activity_bottom_app_bar_menu_bookmark_list">Bookmarks</string>
+  <string name="activity_bottom_app_bar_menu_settings">Settings</string>
 
-  <!--//////////////////////////////////////////////-->
   <!-- DBSetup : Used for validation -->
   <string name="book_name_first">Genesis</string>
   <string name="book_name_last">Revelation</string>
 
-  <!--//////////////////////////////////////////////-->
   <!-- HomeScreen : Text shown when DB is being setup -->
   <string name="scr_home_verse_content_loading">
     <![CDATA[
