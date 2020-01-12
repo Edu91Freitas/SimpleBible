@@ -123,4 +123,34 @@
     app:launchSingleTop="true"
     app:popUpTo="@id/navigation_activity_simple_bible"
     app:popUpToInclusive="true" />
+  <action
+    android:id="@+id/show_screenSettings"
+    app:destination="@id/screenSettings"
+    app:launchSingleTop="true"
+    app:popUpTo="@id/navigation_activity_simple_bible"
+    app:popUpToInclusive="true" />
+  <action
+    android:id="@+id/show_screenHome"
+    app:destination="@id/screenHome"
+    app:launchSingleTop="true"
+    app:popUpTo="@id/navigation_activity_simple_bible"
+    app:popUpToInclusive="true" />
+  <action
+    android:id="@+id/show_screenBookList"
+    app:destination="@id/screenBookList"
+    app:launchSingleTop="true"
+    app:popUpTo="@id/navigation_activity_simple_bible"
+    app:popUpToInclusive="true" />
+  <action
+    android:id="@+id/show_screenSearch"
+    app:destination="@id/screenSearch"
+    app:launchSingleTop="true"
+    app:popUpTo="@id/navigation_activity_simple_bible"
+    app:popUpToInclusive="true" />
+  <action
+    android:id="@+id/show_screenBookmarkList"
+    app:destination="@id/screenBookmarkList"
+    app:launchSingleTop="true"
+    app:popUpTo="@id/navigation_activity_simple_bible"
+    app:popUpToInclusive="true" />
 </navigation>

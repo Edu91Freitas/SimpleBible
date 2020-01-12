@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 
 import com.andrewchelladurai.app.simplebible.ui.ops.SimpleBibleOps;
 import com.andrewchelladurai.simplebible.R;
@@ -14,6 +16,7 @@ public class SimpleBible
     implements SimpleBibleOps {
 
   private static final String TAG = "SimpleBible";
+  private NavController navController;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -38,31 +41,38 @@ public class SimpleBible
       }
     });
 
+    navController = Navigation.findNavController(findViewById(R.id.activity_nav_host_fragment));
+
   }
 
   private boolean showScreenHome() {
     Log.d(TAG, "showScreenHome:");
-    return false;
+    navController.navigate(R.id.show_screenHome);
+    return true;
   }
 
   private boolean showScreenBooksList() {
     Log.d(TAG, "showScreenBooksList:");
-    return false;
+    navController.navigate(R.id.show_screenBookList);
+    return true;
   }
 
   private boolean showScreenSearch() {
     Log.d(TAG, "showScreenSearch:");
-    return false;
+    navController.navigate(R.id.show_screenSearch);
+    return true;
   }
 
   private boolean showScreenBookmarksList() {
     Log.d(TAG, "showScreenBookmarksList:");
-    return false;
+    navController.navigate(R.id.show_screenBookmarkList);
+    return true;
   }
 
   private boolean showScreenSettings() {
     Log.d(TAG, "showScreenSettings:");
-    return false;
+    navController.navigate(R.id.show_screenSettings);
+    return true;
   }
 
 }
