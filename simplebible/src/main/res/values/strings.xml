@@ -9,6 +9,9 @@
   <string name="activity_bottom_app_bar_menu_bookmark_list">Bookmarks</string>
   <string name="activity_bottom_app_bar_menu_settings">Settings</string>
 
+  <string name="app_notif_channel_name">Default Notification Channel</string>
+  <string name="app_notif_channel_desc">Notifications will use this group by default.</string>
+
   <!-- DBSetup : Used for validation -->
   <string name="book_name_first">Genesis</string>
   <string name="book_name_last">Revelation</string>
@@ -48,5 +51,4 @@
     should not perish,<br/>
     but have eternal life.</h3><br/>
     <b>The World English Bible</b>]]></string>
-
 </resources>
