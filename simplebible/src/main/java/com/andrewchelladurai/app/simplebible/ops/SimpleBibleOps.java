@@ -14,4 +14,8 @@ public interface SimpleBibleOps {
 
   void hideKeyboard();
 
+  void hideNavigationBar();
+
+  void showNavigationBar();
+
 }

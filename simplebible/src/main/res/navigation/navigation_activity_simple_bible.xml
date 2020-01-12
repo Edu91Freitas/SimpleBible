@@ -4,7 +4,7 @@
   xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools"
   android:id="@+id/navigation_activity_simple_bible"
-  app:startDestination="@id/screenHome">
+  app:startDestination="@id/loadScreen">
 
   <fragment
     android:id="@+id/screenHome"
@@ -153,4 +153,9 @@
     app:launchSingleTop="true"
     app:popUpTo="@id/navigation_activity_simple_bible"
     app:popUpToInclusive="true" />
+  <fragment
+    android:id="@+id/loadScreen"
+    android:name="com.andrewchelladurai.app.simplebible.ui.LoadScreen"
+    android:label="load_screen"
+    tools:layout="@layout/load_screen" />
 </navigation>

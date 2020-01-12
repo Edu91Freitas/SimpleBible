@@ -26,6 +26,7 @@ public class SimpleBible
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
+    Log.d(TAG, "onCreate:");
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_simple_bible);
 
@@ -57,12 +58,6 @@ public class SimpleBible
 
   }
 
-  public boolean showScreenHome() {
-    Log.d(TAG, "showScreenHome:");
-    navController.navigate(R.id.show_screenHome);
-    return true;
-  }
-
   private void createNotificationChannel() {
     if (Build.VERSION.SDK_INT < Build.VERSION_CODES.O) {
       Log.d(TAG, "createNotificationChannel: Skipped coz feature not present in Android "
@@ -83,6 +78,12 @@ public class SimpleBible
     } else {
       Log.e(TAG, "createNotificationChannel: failed [Null systemService received]");
     }
+  }
+
+  public boolean showScreenHome() {
+    Log.d(TAG, "showScreenHome:");
+    navController.navigate(R.id.show_screenHome);
+    return true;
   }
 
   public boolean showScreenBooksList() {
@@ -110,6 +111,7 @@ public class SimpleBible
   }
 
   public void hideKeyboard() {
+    Log.d(TAG, "hideKeyboard:");
     final InputMethodManager inputMethodManager =
         (InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE);
 
@@ -120,6 +122,20 @@ public class SimpleBible
     if (inputMethodManager != null) {
       inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
     }
+  }
+
+  @Override
+  public void hideNavigationBar() {
+    Log.d(TAG, "hideNavigationBar:");
+    findViewById(R.id.activity_bottom_app_bar).setVisibility(View.GONE);
+    findViewById(R.id.activity_bottom_app_bar_fab).setVisibility(View.GONE);
+  }
+
+  @Override
+  public void showNavigationBar() {
+    Log.d(TAG, "showNavigationBar:");
+    findViewById(R.id.activity_bottom_app_bar).setVisibility(View.VISIBLE);
+    findViewById(R.id.activity_bottom_app_bar_fab).setVisibility(View.VISIBLE);
   }
 
 }
