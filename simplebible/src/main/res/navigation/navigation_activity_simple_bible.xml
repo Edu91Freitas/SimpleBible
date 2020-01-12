@@ -10,45 +10,117 @@
     android:id="@+id/screenHome"
     android:name="com.andrewchelladurai.app.simplebible.ui.ScreenHome"
     android:label="screen_home"
-    tools:layout="@layout/screen_home" />
+    tools:layout="@layout/screen_home">
+    <action
+      android:id="@+id/screenHome_to_screenChapter"
+      app:destination="@id/screenChapter" />
+    <action
+      android:id="@+id/action_screenHome_to_screenBookmarkDetails"
+      app:destination="@id/screenBookmarkDetails" />
+  </fragment>
+
   <fragment
     android:id="@+id/screenBookList"
     android:name="com.andrewchelladurai.app.simplebible.ui.ScreenBookList"
     android:label="screen_book_list"
-    tools:layout="@layout/screen_book_list" />
+    tools:layout="@layout/screen_book_list">
+    <action
+      android:id="@+id/screenBookList_to_screenBookDetails"
+      app:destination="@id/screenBookDetails" />
+    <action
+      android:id="@+id/screenBookList_to_screenChapter"
+      app:destination="@id/screenChapter" />
+  </fragment>
+
   <fragment
     android:id="@+id/screenSearch"
     android:name="com.andrewchelladurai.app.simplebible.ui.ScreenSearch"
     android:label="screen_search"
-    tools:layout="@layout/screen_search" />
+    tools:layout="@layout/screen_search">
+    <action
+      android:id="@+id/screenSearch_to_screenBookmarkDetails"
+      app:destination="@id/screenBookmarkDetails" />
+  </fragment>
+
   <fragment
     android:id="@+id/screenSettings"
     android:name="com.andrewchelladurai.app.simplebible.ui.ScreenSettings"
     android:label="screen_settings"
     tools:layout="@layout/screen_settings" />
+
   <fragment
     android:id="@+id/screenBookmarkList"
     android:name="com.andrewchelladurai.app.simplebible.ui.ScreenBookmarkList"
     android:label="screen_bookmark_list"
-    tools:layout="@layout/screen_bookmark_list" />
+    tools:layout="@layout/screen_bookmark_list">
+    <action
+      android:id="@+id/screenBookmarkList_to_screenBookmarkDetails"
+      app:destination="@id/screenBookmarkDetails" />
+  </fragment>
+
   <fragment
     android:id="@+id/screenChapter"
     android:name="com.andrewchelladurai.app.simplebible.ui.ScreenChapter"
     android:label="screen_chapter"
-    tools:layout="@layout/screen_chapter" />
+    tools:layout="@layout/screen_chapter">
+    <action
+      android:id="@+id/screenChapter_to_screenBookmarkDetails"
+      app:destination="@id/screenBookmarkDetails" />
+    <argument
+      android:name="BOOK_NUMBER"
+      app:argType="integer" />
+    <argument
+      android:name="CHAPTER_NUMBER"
+      app:argType="integer" />
+  </fragment>
+
   <fragment
     android:id="@+id/screenMessage"
     android:name="com.andrewchelladurai.app.simplebible.ui.ScreenMessage"
     android:label="screen_message"
-    tools:layout="@layout/screen_message" />
+    tools:layout="@layout/screen_message">
+    <argument
+      android:name="MESSAGE"
+      app:argType="string"
+      app:nullable="true" />
+    <argument
+      android:name="EXIT"
+      android:defaultValue="false"
+      app:argType="boolean" />
+    <argument
+      android:name="INFORM_DEV"
+      android:defaultValue="true"
+      app:argType="boolean" />
+    <argument
+      android:name="WARNING"
+      android:defaultValue="true"
+      app:argType="boolean" />
+  </fragment>
+
   <fragment
     android:id="@+id/screenBookDetails"
     android:name="com.andrewchelladurai.app.simplebible.ui.ScreenBookDetails"
     android:label="screen_book_details"
-    tools:layout="@layout/screen_book_details" />
+    tools:layout="@layout/screen_book_details">
+    <argument
+      android:name="BOOK_NUMBER"
+      app:argType="integer" />
+  </fragment>
+
   <fragment
     android:id="@+id/screenBookmarkDetails"
     android:name="com.andrewchelladurai.app.simplebible.ui.ScreenBookmarkDetails"
     android:label="screen_bookmark_details"
-    tools:layout="@layout/screen_bookmark_details" />
+    tools:layout="@layout/screen_bookmark_details">
+    <argument
+      android:name="REFERENCES"
+      app:argType="string" />
+  </fragment>
+
+  <action
+    android:id="@+id/show_screenMessage"
+    app:destination="@id/screenMessage"
+    app:launchSingleTop="true"
+    app:popUpTo="@id/navigation_activity_simple_bible"
+    app:popUpToInclusive="true" />
 </navigation>
