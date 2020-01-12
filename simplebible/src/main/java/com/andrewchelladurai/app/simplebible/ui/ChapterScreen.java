@@ -20,7 +20,7 @@ public class ChapterScreen
     extends Fragment
     implements ScreenChapterOps {
 
-  private ChapterScreenVM mViewModel;
+  private ChapterScreenVM vModel;
   private SimpleBibleOps activityOps;
 
   @Override
@@ -42,8 +42,8 @@ public class ChapterScreen
   @Override
   public void onActivityCreated(@Nullable Bundle savedInstanceState) {
     super.onActivityCreated(savedInstanceState);
-    mViewModel = ViewModelProviders.of(this)
-                                   .get(ChapterScreenVM.class);
+    vModel = ViewModelProviders.of(this)
+                               .get(ChapterScreenVM.class);
     // TODO: Use the ViewModel
   }
 

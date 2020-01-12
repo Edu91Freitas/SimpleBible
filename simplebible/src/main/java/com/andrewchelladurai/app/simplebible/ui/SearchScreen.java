@@ -20,7 +20,7 @@ public class SearchScreen
     extends Fragment
     implements ScreenSearchOps {
 
-  private SearchScreenVM mViewModel;
+  private SearchScreenVM vModel;
   private SimpleBibleOps activityOps;
 
   @Override
@@ -42,8 +42,8 @@ public class SearchScreen
   @Override
   public void onActivityCreated(@Nullable Bundle savedInstanceState) {
     super.onActivityCreated(savedInstanceState);
-    mViewModel = ViewModelProviders.of(this)
-                                   .get(SearchScreenVM.class);
+    vModel = ViewModelProviders.of(this)
+                               .get(SearchScreenVM.class);
     // TODO: Use the ViewModel
   }
 

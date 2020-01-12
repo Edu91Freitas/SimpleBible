@@ -20,8 +20,7 @@ public class HomeScreen
     extends Fragment
     implements ScreenHomeOps {
 
-  private HomeScreenVM mViewModel;
-
+  private HomeScreenVM vModel;
   private SimpleBibleOps activityOps;
 
   @Override
@@ -43,8 +42,8 @@ public class HomeScreen
   @Override
   public void onActivityCreated(@Nullable Bundle savedInstanceState) {
     super.onActivityCreated(savedInstanceState);
-    mViewModel = ViewModelProviders.of(this)
-                                   .get(HomeScreenVM.class);
+    vModel = ViewModelProviders.of(this)
+                               .get(HomeScreenVM.class);
     // TODO: Use the ViewModel
   }
 

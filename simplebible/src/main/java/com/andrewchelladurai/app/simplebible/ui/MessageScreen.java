@@ -20,7 +20,7 @@ public class MessageScreen
     extends Fragment
     implements ScreenMessageOps {
 
-  private MessageScreenVM mViewModel;
+  private MessageScreenVM vModel;
   private SimpleBibleOps activityOps;
 
   @Override
@@ -42,8 +42,8 @@ public class MessageScreen
   @Override
   public void onActivityCreated(@Nullable Bundle savedInstanceState) {
     super.onActivityCreated(savedInstanceState);
-    mViewModel = ViewModelProviders.of(this)
-                                   .get(MessageScreenVM.class);
+    vModel = ViewModelProviders.of(this)
+                               .get(MessageScreenVM.class);
     // TODO: Use the ViewModel
   }
 

@@ -20,7 +20,7 @@ public class SettingsScreen
     extends Fragment
     implements ScreenSettingsOps {
 
-  private SettingsScreenVM mViewModel;
+  private SettingsScreenVM vModel;
   private SimpleBibleOps activityOps;
 
   @Override
@@ -42,8 +42,8 @@ public class SettingsScreen
   @Override
   public void onActivityCreated(@Nullable Bundle savedInstanceState) {
     super.onActivityCreated(savedInstanceState);
-    mViewModel = ViewModelProviders.of(this)
-                                   .get(SettingsScreenVM.class);
+    vModel = ViewModelProviders.of(this)
+                               .get(SettingsScreenVM.class);
     // TODO: Use the ViewModel
   }
 

@@ -20,7 +20,7 @@ public class BookDetailsScreen
     extends Fragment
     implements ScreenBookDetailsOps {
 
-  private BookDetailsScreenVM mViewModel;
+  private BookDetailsScreenVM vModel;
   private SimpleBibleOps activityOps;
 
   @Override
@@ -42,8 +42,8 @@ public class BookDetailsScreen
   @Override
   public void onActivityCreated(@Nullable Bundle savedInstanceState) {
     super.onActivityCreated(savedInstanceState);
-    mViewModel = ViewModelProviders.of(this)
-                                   .get(BookDetailsScreenVM.class);
+    vModel = ViewModelProviders.of(this)
+                               .get(BookDetailsScreenVM.class);
     // TODO: Use the ViewModel
   }
 

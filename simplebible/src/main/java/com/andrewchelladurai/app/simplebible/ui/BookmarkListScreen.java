@@ -20,9 +20,8 @@ public class BookmarkListScreen
     extends Fragment
     implements ScreenBookmarkListOps {
 
+  private BookmarkListScreenVM vModel;
   private SimpleBibleOps activityOps;
-
-  private BookmarkListScreenVM mViewModel;
 
   @Override
   public void onAttach(@NonNull Context context) {
@@ -43,8 +42,8 @@ public class BookmarkListScreen
   @Override
   public void onActivityCreated(@Nullable Bundle savedInstanceState) {
     super.onActivityCreated(savedInstanceState);
-    mViewModel = ViewModelProviders.of(this)
-                                   .get(BookmarkListScreenVM.class);
+    vModel = ViewModelProviders.of(this)
+                               .get(BookmarkListScreenVM.class);
     // TODO: Use the ViewModel
   }
 

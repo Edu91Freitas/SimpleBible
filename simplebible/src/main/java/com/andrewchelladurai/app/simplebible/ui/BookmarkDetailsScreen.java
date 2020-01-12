@@ -20,14 +20,14 @@ public class BookmarkDetailsScreen
     extends Fragment
     implements ScreenBookmarkDetailsOps {
 
-  private SimpleBibleOps activityOps;
+  private SimpleBibleOps vModel;
   private BookmarkDetailsScreenVM mViewModel;
 
   @Override
   public void onAttach(@NonNull Context context) {
     super.onAttach(context);
     if (context instanceof SimpleBibleOps) {
-      activityOps = (SimpleBibleOps) context;
+      vModel = (SimpleBibleOps) context;
     } else {
       throw new RuntimeException(context.toString() + " must implement SimpleBibleOps");
     }
@@ -50,7 +50,7 @@ public class BookmarkDetailsScreen
   @Override
   public void onDetach() {
     super.onDetach();
-    activityOps = null;
+    vModel = null;
   }
 
 }
