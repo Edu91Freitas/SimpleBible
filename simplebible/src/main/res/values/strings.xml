@@ -1,16 +1,16 @@
 <resources>
 
-    <string name="app_name">Simple Bible</string>
-    <string name="default_verse_reference">43:3:16</string>
+  <string name="app_name">Simple Bible</string>
+  <string name="default_verse_reference">43:3:16</string>
 
   <!--//////////////////////////////////////////////-->
   <!-- DBSetup : Used for validation -->
-    <string name="book_name_first">Genesis</string>
-    <string name="book_name_last">Revelation</string>
+  <string name="book_name_first">Genesis</string>
+  <string name="book_name_last">Revelation</string>
 
   <!--//////////////////////////////////////////////-->
   <!-- HomeScreen : Text shown when DB is being setup -->
-    <string name="scr_home_verse_content_loading">
+  <string name="scr_home_verse_content_loading">
     <![CDATA[
     <h1>Simple Bible</h1>
     <h5>CREATING DATABASE</h5>
@@ -24,7 +24,7 @@
     <b>The World English Bible</b>]]></string>
 
   <!-- HomeScreen : Template of Daily Verse -->
-    <string name="scr_home_verse_content_template">
+  <string name="scr_home_verse_content_template">
     <![CDATA[
     <h1>Simple Bible</h1><br/>
     <h5>%s</h5>
@@ -33,7 +33,7 @@
     The World English Bible]]></string>
 
   <!-- HomeScreen : Text shown when the Daily Verse fails to load for any reason -->
-    <string name="scr_home_verse_content_default">
+  <string name="scr_home_verse_content_default">
     <![CDATA[
     <h1>Simple Bible</h1><br/>
     <h5>The Gospel of John<br/>
@@ -44,5 +44,8 @@
     should not perish,<br/>
     but have eternal life.</h3><br/>
     <b>The World English Bible</b>]]></string>
+
+  <!-- TODO: Remove or change this placeholder text -->
+  <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

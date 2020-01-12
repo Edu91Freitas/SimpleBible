@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/navigation_activity_simple_bible"
+  app:startDestination="@id/screenHome">
+
+  <fragment
+    android:id="@+id/screenHome"
+    android:name="com.andrewchelladurai.app.simplebible.ui.ScreenHome"
+    android:label="screen_home"
+    tools:layout="@layout/screen_home" />
+  <fragment
+    android:id="@+id/screenBookList"
+    android:name="com.andrewchelladurai.app.simplebible.ui.ScreenBookList"
+    android:label="screen_book_list"
+    tools:layout="@layout/screen_book_list" />
+  <fragment
+    android:id="@+id/screenSearch"
+    android:name="com.andrewchelladurai.app.simplebible.ui.ScreenSearch"
+    android:label="screen_search"
+    tools:layout="@layout/screen_search" />
+  <fragment
+    android:id="@+id/screenSettings"
+    android:name="com.andrewchelladurai.app.simplebible.ui.ScreenSettings"
+    android:label="screen_settings"
+    tools:layout="@layout/screen_settings" />
+  <fragment
+    android:id="@+id/screenBookmarkList"
+    android:name="com.andrewchelladurai.app.simplebible.ui.ScreenBookmarkList"
+    android:label="screen_bookmark_list"
+    tools:layout="@layout/screen_bookmark_list" />
+  <fragment
+    android:id="@+id/screenChapter"
+    android:name="com.andrewchelladurai.app.simplebible.ui.ScreenChapter"
+    android:label="screen_chapter"
+    tools:layout="@layout/screen_chapter" />
+  <fragment
+    android:id="@+id/screenMessage"
+    android:name="com.andrewchelladurai.app.simplebible.ui.ScreenMessage"
+    android:label="screen_message"
+    tools:layout="@layout/screen_message" />
+  <fragment
+    android:id="@+id/screenBookDetails"
+    android:name="com.andrewchelladurai.app.simplebible.ui.ScreenBookDetails"
+    android:label="screen_book_details"
+    tools:layout="@layout/screen_book_details" />
+  <fragment
+    android:id="@+id/screenBookmarkDetails"
+    android:name="com.andrewchelladurai.app.simplebible.ui.ScreenBookmarkDetails"
+    android:label="screen_bookmark_details"
+    tools:layout="@layout/screen_bookmark_details" />
+</navigation>
